@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#110d1a">
+  <meta name="description" content="Explora videojuegos digitales para PS5 y PS4. Compara precios y opciones de cuenta en CITY OF GAMERS.">
+  <title>CITY OF GAMERS | Videojuegos digitales PS5 y PS4</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./promociones.js"></script>
+  <script defer src="./storefront.js"></script>
+  <script defer src="./app.js"></script>
+  <script defer src="./profile.js"></script>
+</head>
+<body id="inicio">
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M6.6 7h10.8c2.4 0 3.6 1.5 4.1 3.8l.9 4.6c.5 2.7-1.6 4.1-3.4 2.8l-3.3-2.5H8.3L5 18.2c-1.8 1.3-3.9-.1-3.4-2.8l.9-4.6C3 8.5 4.2 7 6.6 7Z"/><path d="M7.6 9.9v4.2m-2.1-2.1h4.2M16.2 11h.1m2 2h.1"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4 4"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M2 4h3l2.6 11.2h11.6L22 7H6"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20 13.5 13.5 20a2 2 0 0 1-2.8 0L3 12.3V4h8.3l8.7 6.7a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="8.5" r="1"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.25"/><path d="M5.5 20v-1.5A4.5 4.5 0 0 1 10 14h4a4.5 4.5 0 0 1 4.5 4.5V20"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M16 5a3 3 0 0 1 0 6m2 3a4 4 0 0 1 3 4v2"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5m4-5v5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 6v12m6-12v12"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+  </svg>
+  <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+
+  <header class="site-header">
+    <div class="frame header-inner">
+      <a class="brand" href="#inicio" aria-label="City of Gamers, inicio">
+        <span class="brand-mark"><svg aria-hidden="true"><use href="#i-gamepad"></use></svg></span>
+        <span>CITY OF <strong>GAMERS</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#catalogo" data-platform="all" class="is-active">Catálogo</a>
+        <a href="#catalogo" data-platform="PS5">PS5</a>
+        <a href="#catalogo" data-platform="PS4">PS4</a>
+        <a href="#catalogo" data-show-offers>Ofertas</a>
+      </nav>
+      <div class="header-actions">
+        <!--admin-action-->
+        <button class="icon-button search-trigger" type="button" data-open-search aria-label="Buscar juegos"><svg aria-hidden="true"><use href="#i-search"></use></svg></button>
+        <button class="cart-trigger" type="button" data-open-cart aria-label="Abrir carrito">
+          <svg aria-hidden="true"><use href="#i-cart"></use></svg><span class="cart-label">Carrito</span><span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button id="profile-trigger" class="icon-button profile-trigger" type="button" aria-label="Mi perfil" aria-haspopup="dialog" aria-controls="profile-dialog">
+          <svg aria-hidden="true"><use href="#i-user"></use></svg><span id="profile-trigger-label">Mi perfil</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="frame">
+    <section hidden class="promotions" aria-roledescription="carrusel" aria-labelledby="promotions-title">
+      <h1 class="visually-hidden" id="promotions-title">Promociones de CITY OF GAMERS</h1>
+      <div class="promo-viewport" id="promo-viewport" tabindex="0" role="group" aria-label="Banners de la tienda">
+        <!--promo-start-->
+        <img data-title="Descuentos" src="./assets/banners/descuentos-2048.webp" srcset="./assets/banners/descuentos-1024.webp 1024w, ./assets/banners/descuentos-2048.webp 2048w" sizes="(max-width: 1344px) 100vw, 1344px" width="2048" height="682" fetchpriority="high" draggable="false" alt="Los mejores descuentos en juegos digitales. Selección de City of Gamers para PlayStation y Xbox.">
+        <img data-title="Suscripciones" src="./assets/banners/suscripciones-2048.webp" srcset="./assets/banners/suscripciones-1024.webp 1024w, ./assets/banners/suscripciones-2048.webp 2048w" sizes="(max-width: 1344px) 100vw, 1344px" width="2048" height="682" loading="lazy" draggable="false" alt="Tu suscripción en segundos. PlayStation Plus Essential, Extra y Deluxe, y Xbox Game Pass Ultimate.">
+        <img data-title="Bienvenida" src="./assets/banners/bienvenida-2048.webp" srcset="./assets/banners/bienvenida-1024.webp 1024w, ./assets/banners/bienvenida-2048.webp 2048w" sizes="(max-width: 1344px) 100vw, 1344px" width="2048" height="682" loading="lazy" draggable="false" alt="¿Buscas el mejor lugar para tus juegos digitales? ¡Bienvenido a City of Gamers! Líderes en calidad y rapidez.">
+        <img data-title="Vice City Nights" src="./assets/banners/vice-city-nights-2048.webp" srcset="./assets/banners/vice-city-nights-1024.webp 1024w, ./assets/banners/vice-city-nights-2048.webp 2048w" sizes="(max-width: 1344px) 100vw, 1344px" width="2048" height="682" loading="lazy" draggable="false" alt="Vice City Nights. Una pareja frente al horizonte de Vice City al atardecer, con escenas de la ciudad.">
+        <img data-title="Torneos" src="./assets/banners/torneos-2048.webp" srcset="./assets/banners/torneos-1024.webp 1024w, ./assets/banners/torneos-2048.webp 2048w" sizes="(max-width: 1344px) 100vw, 1344px" width="2048" height="682" loading="lazy" draggable="false" alt="Torneos City of Gamers. Compite, gana, demuestra de qué estás hecho.">
+        <img data-title="Comunidad de WhatsApp" src="./assets/banners/comunidad-whatsapp-2048.webp" srcset="./assets/banners/comunidad-whatsapp-1024.webp 1024w, ./assets/banners/comunidad-whatsapp-2048.webp 2048w" sizes="(max-width: 1344px) 100vw, 1344px" width="2048" height="682" loading="lazy" draggable="false" alt="Únete a nuestra comunidad gamer en WhatsApp para enterarte de nuevos juegos, descuentos exclusivos, preventas y novedades.">
+        <!--promo-end-->
+      </div>
+      <div class="promo-controls" hidden>
+        <span class="promo-caption" aria-live="off" aria-atomic="true">Descuentos</span>
+        <div class="promo-dots" role="group" aria-label="Elegir banner"></div>
+        <div class="promo-actions">
+          <button class="promo-button" type="button" data-rotation aria-controls="promo-viewport" aria-label="Pausar el carrusel" title="Pausar el carrusel"><svg aria-hidden="true"><use href="#i-pause"></use></svg></button>
+          <button class="promo-button" type="button" data-previous aria-controls="promo-viewport" aria-label="Banner anterior" title="Banner anterior"><svg class="promo-prev-icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+          <button class="promo-button" type="button" data-next aria-controls="promo-viewport" aria-label="Banner siguiente" title="Banner siguiente"><svg class="promo-next-icon" aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="store-details" aria-label="Opciones del catálogo">
+      <a href="#catalogo" data-platform="PS5">
+        <span class="detail-icon"><svg aria-hidden="true"><use href="#i-gamepad"></use></svg></span>
+        <span><strong>PlayStation 5</strong><small>Explorar juegos de PS5</small></span>
+      </a>
+      <a href="#catalogo" data-platform="PS4">
+        <span class="detail-icon"><svg aria-hidden="true"><use href="#i-gamepad"></use></svg></span>
+        <span><strong>PlayStation 4</strong><small>Explorar juegos de PS4</small></span>
+      </a>
+      <div>
+        <span class="detail-icon"><svg aria-hidden="true"><use href="#i-users"></use></svg></span>
+        <span><strong>Cuenta primaria o secundaria</strong><small>Según el juego y la consola</small></span>
+      </div>
+    </div>
+
+    <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+      <div class="catalog-heading">
+        <div>
+          <p class="eyebrow"><span></span> PS5 Y PS4</p>
+          <h2 id="catalog-title">CATÁLOGO DE JUEGOS</h2>
+        </div>
+        <div class="currency-label">Precios de referencia en COP</div>
+      </div>
+      <div class="catalog-controls">
+        <div class="platform-controls" role="group" aria-label="Filtrar por consola">
+          <button type="button" data-platform="all" aria-pressed="true">Todos</button>
+          <button type="button" data-platform="PS5" aria-pressed="false">PS5</button>
+          <button type="button" data-platform="PS4" aria-pressed="false">PS4</button>
+          <button type="button" data-show-offers aria-pressed="false"><svg aria-hidden="true"><use href="#i-tag"></use></svg> Ofertas</button>
+        </div>
+        <div class="input-controls">
+          <label class="search-field">
+            <svg aria-hidden="true"><use href="#i-search"></use></svg>
+            <span class="visually-hidden">Buscar un juego</span>
+            <input type="search" id="search-input" placeholder="Buscar un juego…" autocomplete="off">
+          </label>
+          <label class="select-field">
+            <span class="visually-hidden">Género</span>
+            <select id="genre-select"><option value="all">Todos los géneros</option></select>
+            <svg aria-hidden="true"><use href="#i-chevron"></use></svg>
+          </label>
+          <label class="select-field">
+            <span class="visually-hidden">Orden</span>
+            <select id="sort-select">
+              <option value="featured">Destacados</option>
+              <option value="low">Menor precio</option>
+              <option value="high">Mayor precio</option>
+              <option value="az">Nombre A a Z</option>
+              <option value="za">Nombre Z a A</option>
+            </select>
+            <svg aria-hidden="true"><use href="#i-chevron"></use></svg>
+          </label>
+        </div>
+      </div>
+      <p class="catalog-count" id="catalog-count" role="status" aria-live="polite">Cargando juegos…</p>
+      <div id="game-grid" class="game-grid"></div>
+      <div id="empty-state" class="catalog-empty" hidden>
+        <svg aria-hidden="true"><use href="#i-search"></use></svg>
+        <h3 data-empty-message>No encontramos juegos con esos filtros</h3>
+        <button type="button" class="button button-secondary" data-reset-filters>Restablecer filtros</button>
+      </div>
+      <div class="more-controls" id="more-controls" hidden><button class="button button-secondary" type="button" id="load-more"><svg aria-hidden="true"><use href="#i-plus"></use></svg> Cargar más juegos</button></div>
+      <noscript><p>Activa JavaScript para explorar los juegos y sus variantes.</p></noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="frame footer-inner">
+      <a class="brand" href="#inicio" aria-label="City of Gamers, inicio">
+        <span class="brand-mark"><svg aria-hidden="true"><use href="#i-gamepad"></use></svg></span>
+        <span>CITY OF <strong>GAMERS</strong></span>
+      </a>
+      <p id="footer-info">Catálogo y precios de referencia de <a id="catalog-source" href="https://juegosdigitalesps4ps5.com/" target="_blank" rel="noopener noreferrer">Juegos Digitales PS4 y PS5</a>. Consulta del <time id="catalog-checked">21 nov 2026</time>.</p>
+      <a class="back-top" id="contact-whatsapp" target="_blank" rel="noopener noreferrer" hidden>WhatsApp</a>
+      <a class="back-top" href="#inicio">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <dialog id="game-dialog" class="store-dialog" aria-labelledby="game-dialog-title"></dialog>
+  <dialog id="cart-dialog" class="store-dialog compact-dialog" aria-labelledby="cart-dialog-title"></dialog>
+  <dialog id="order-dialog" class="store-dialog compact-dialog" aria-labelledby="order-dialog-title"></dialog>
+  <dialog id="profile-dialog" class="store-dialog compact-dialog profile-dialog" aria-labelledby="profile-dialog-title" aria-describedby="profile-explanation">
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <h2 id="profile-dialog-title">Mi perfil</h2>
+        <button id="profile-close" class="icon-button dialog-close" type="button" aria-label="Cerrar perfil">
+          <svg aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </header>
+      <dl class="profile-session">
+        <dt>Correo de tu sesión</dt>
+        <dd id="profile-email">Cargando…</dd>
+      </dl>
+      <form id="profile-form" class="profile-form" method="dialog">
+        <label class="profile-name-field" for="profile-name">Tu nombre
+          <input id="profile-name" name="name" type="text" autocomplete="name" required maxlength="80" disabled autofocus>
+        </label>
+        <p id="profile-explanation" class="dialog-note">Tu nombre se incluye en el mensaje de compra. Tu correo permanece en tu sesión.</p>
+        <p id="profile-status" class="profile-status" role="status" aria-live="polite"></p>
+        <div class="dialog-actions profile-actions">
+          <button id="profile-save" class="dialog-action" type="submit" disabled>Guardar nombre</button>
+          <button id="profile-retry" class="dialog-secondary" type="button" hidden>Reintentar</button>
+          <a class="profile-signout" href="/signout-with-chatgpt?return_to=%2F" target="_top">Cerrar sesión</a>
+        </div>
+      </form>
+    </div>
+  </dialog>
+  <p class="toast" id="toast" role="status" aria-live="polite" hidden></p>
+</body>
+</html>

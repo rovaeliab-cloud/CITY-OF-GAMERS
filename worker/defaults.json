@@ -1,0 +1,60 @@
+{
+  "banners": [
+    {
+      "title": "Descuentos",
+      "alt": "Los mejores descuentos en juegos digitales. Selección de City of Gamers para PlayStation y Xbox.",
+      "image": "/assets/banners/descuentos-2048.webp",
+      "small": "/assets/banners/descuentos-1024.webp"
+    },
+    {
+      "title": "Suscripciones",
+      "alt": "Tu suscripción en segundos. PlayStation Plus Essential, Extra y Deluxe, y Xbox Game Pass Ultimate.",
+      "image": "/assets/banners/suscripciones-2048.webp",
+      "small": "/assets/banners/suscripciones-1024.webp"
+    },
+    {
+      "title": "Bienvenida",
+      "alt": "¿Buscas el mejor lugar para tus juegos digitales? ¡Bienvenido a City of Gamers! Líderes en calidad y rapidez.",
+      "image": "/assets/banners/bienvenida-2048.webp",
+      "small": "/assets/banners/bienvenida-1024.webp"
+    },
+    {
+      "title": "Vice City Nights",
+      "alt": "Vice City Nights. Una pareja frente al horizonte de Vice City al atardecer, con escenas de la ciudad.",
+      "image": "/assets/banners/vice-city-nights-2048.webp",
+      "small": "/assets/banners/vice-city-nights-1024.webp"
+    },
+    {
+      "title": "Torneos",
+      "alt": "Torneos City of Gamers. Compite, gana, demuestra de qué estás hecho.",
+      "image": "/assets/banners/torneos-2048.webp",
+      "small": "/assets/banners/torneos-1024.webp"
+    },
+    {
+      "title": "Comunidad de WhatsApp",
+      "alt": "Únete a nuestra comunidad gamer en WhatsApp para enterarte de nuevos juegos, descuentos exclusivos, preventas y novedades.",
+      "image": "/assets/banners/comunidad-whatsapp-2048.webp",
+      "small": "/assets/banners/comunidad-whatsapp-1024.webp"
+    }
+  ],
+  "contact": {
+    "whatsapp": "573127306642"
+  },
+  "appearance": {
+    "backgroundColor": "#100d17",
+    "backgroundImage": "",
+    "storeName": "CITY OF GAMERS",
+    "heroTitle": "Promociones de CITY OF GAMERS",
+    "catalogTitle": "CATÁLOGO DE JUEGOS",
+    "catalogKicker": "PS5 Y PS4",
+    "ps5Title": "PlayStation 5",
+    "ps5Text": "Explorar juegos de PS5",
+    "ps4Title": "PlayStation 4",
+    "ps4Text": "Explorar juegos de PS4",
+    "accountTitle": "Cuenta primaria o secundaria",
+    "accountText": "Según el juego y la consola",
+    "footerText": "",
+    "showBanners": true,
+    "showHighlights": true
+  }
+}

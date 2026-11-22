@@ -1,0 +1,5 @@
+{
+  "name": "city-of-gamers", "version": "2.0.0", "private": true, "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": { "build": "node scripts/build-worker.mjs", "test": "node scripts/check-cms.mjs", "start": "node --env-file-if-exists=.env.local scripts/serve.mjs" }
+}
